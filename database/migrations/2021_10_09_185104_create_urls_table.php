@@ -17,6 +17,7 @@ class CreateUrlsTable extends Migration
             $table->id();
             $table->string('orginal_url');
             $table->string('shorten_url');
+            $table->unsignedInteger('visits');
             $table->timestamps();
         });
     }
